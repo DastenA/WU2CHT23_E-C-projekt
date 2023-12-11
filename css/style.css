@@ -14,14 +14,14 @@ a {
 
 header {
     grid-area: hea;
-    background-color:  #e74c3c;
+    background-color:  #e8d8d8;
     justify-content: center;
     align-items: center;
 }
 
 nav {
     grid-area: nav;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(223, 202, 202);
     align-items: center;
 }
 
@@ -31,7 +31,11 @@ li {
 
 footer {
     grid-area: foo;
+    display: flex;
     background-color: rgb(59, 40, 40);
+    justify-content: center;
+    align-items: end;
+    font-size: 50px;
 }
 
 .fit_flare {
@@ -39,7 +43,17 @@ footer {
     height: 150px;
 }
 
-.person {
+.work_out {
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.person_picture {
     width: auto;
     height: 300px;
     padding: 10px;
@@ -58,49 +72,109 @@ footer {
     list-style: none;
 }
 
-.text {
+.training_text {
     font-size: 20px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
+}
+.health_text {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.eating_healthy_picture{
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+
+.intro_text {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.intro_picture{
+    width: auto;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hype_title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 #grid_wrapper_1 {
     display: grid;
-    height: 150vh;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 150px 100px 800px minmax(100px,1fr);
+    height: 200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 100px 500px 500px minmax(100px,1fr);
     grid-template-areas:
     "hea hea"
     "nav nav" 
-    "se1 se1"
+    "se1_1 se1_2"
+    "se1_3 se1_4"
     "foo foo"
 }
 
-
-
-#se_1 {
-    grid-area: se1;
+#se_1_1 {
+    grid-area: se1_1;
     background-color: #e74c3c;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
 }
 
+#se_1_2 {
+    grid-area: se1_2;
+    background-color: #e74c3c;
+}
+
+#se_1_3 {
+    grid-area: se1_3;
+    background-color: #e74c3c;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#se_1_4 {
+    grid-area: se1_4;
+    background-color: #e74c3c;
+}
 #grid_wrapper_2 {
     display: grid;
     height: 200vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 100px 600px 600px minmax(100px,1fr);
+    grid-template-rows: 150px 100px 1000px 1000px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea"
     "nav nav"
-    "se2 se2"
-    "se3 se3"
+    "se2_1 se2_1"
+    "se2_2 se2_2"
     "foo foo"
 }
 
-#se_2 {
-    grid-area: se2;
+#se_2_1 {
+    grid-area: se2_1;
     background-color: #e74c3c;
 }
 
-#se_3 {
-    grid-area: se3;
+#se_2_2 {
+    grid-area: se2_2;
     background-color: #e74c3c;
 }
 
@@ -112,14 +186,14 @@ footer {
     grid-template-areas: 
     "hea hea"
     "nav nav"
-    "se4 se5"
-    "se6 se7"
-    "se8 se9"
+    "se3_1 se3_2"
+    "se3_3 se3_4"
+    "se3_5 se3_6"
     "foo foo"
 }
 
-#se_4 {
-    grid-area: se4;
+#se_3_1 {
+    grid-area: se3_1;
     background-color: #e74c3c;
     overflow: hidden;
     justify-content: center;
@@ -128,19 +202,8 @@ footer {
     flex-direction: column;
 }
 
-#se_5 {
-    grid-area: se5;
-    background-color: #e74c3c;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#se_6 {
-    grid-area: se6;
+#se_3_2 {
+    grid-area: se3_2;
     background-color: #e74c3c;
     overflow: hidden;
     justify-content: center;
@@ -150,8 +213,8 @@ footer {
 
 }
 
-#se_7 {
-    grid-area: se7;
+#se_3_3 {
+    grid-area: se3_3;
     background-color: #e74c3c;
     overflow: hidden;
     justify-content: center;
@@ -161,8 +224,8 @@ footer {
 
 }
 
-#se_8 {
-    grid-area: se8;
+#se_3_4 {
+    grid-area: se3_4;
     background-color: #e74c3c;
     overflow: hidden;
     justify-content: center;
@@ -172,8 +235,19 @@ footer {
 
 }
 
-#se_9 {
-    grid-area: se9;
+#se_3_5 {
+    grid-area: se3_5;
+    background-color: #e74c3c;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#se_3_6 {
+    grid-area: se3_6;
     background-color: #e74c3c;
     overflow: hidden;
     justify-content: center;
