@@ -3,18 +3,22 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 30px;
-
 }
 
 a {
     font-size: 20px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
 }
 
 header {
     grid-area: hea;
-    background-color:  #e8d8d8;
+    background-color:  rgb(223, 202, 202);
     justify-content: center;
     align-items: center;
 }
@@ -72,29 +76,28 @@ footer {
     list-style: none;
 }
 
-.training_text {
+.main_text {
     font-size: 20px;
-    text-align: center;
     font-family: 'Anton', sans-serif;
-
-}
-.health_text {
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
+    padding: 20px;
+    margin: 20px;
 
 }
 
-.eating_healthy_picture{
+.main_page_picture{
     width: 600px;
     height: 400px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro_text {
     font-size: 20px;
     text-align: center;
     font-family: 'Anton', sans-serif;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 .intro_picture{
@@ -106,16 +109,18 @@ footer {
     align-items: center;
 }
 
-#hype_title {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.title{
+    text-align: center;
+}
+
+.forum_text {
+    font-size: 20px;
 }
 #grid_wrapper_1 {
     display: grid;
-    height: 200vh;
+    height: 150vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 100px 500px 500px minmax(100px,1fr);
+    grid-template-rows: 150px 50px 500px 500px minmax(100px,1fr);
     grid-template-areas:
     "hea hea"
     "nav nav" 
@@ -132,12 +137,14 @@ footer {
     align-items: center;
     display: flex;
     flex-direction: column;
-
 }
 
 #se_1_2 {
     grid-area: se1_2;
     background-color: #e74c3c;
+    align-items: center;
+    display: flex;
+
 }
 
 #se_1_3 {
@@ -154,35 +161,54 @@ footer {
 #se_1_4 {
     grid-area: se1_4;
     background-color: #e74c3c;
+    align-items: center;
+    display: flex;
 }
 #grid_wrapper_2 {
     display: grid;
     height: 200vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 100px 1000px 1000px minmax(100px,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px 900px 1000px 200px minmax(100px,1fr);
     grid-template-areas: 
-    "hea hea"
-    "nav nav"
-    "se2_1 se2_1"
-    "se2_2 se2_2"
-    "foo foo"
+    "hea"
+    "nav"
+    "se2_1"
+    "se2_2"
+    "se2_3"
+    "foo"
 }
 
 #se_2_1 {
     grid-area: se2_1;
     background-color: #e74c3c;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #se_2_2 {
     grid-area: se2_2;
     background-color: #e74c3c;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#se_2_3 {
+    grid-area: se2_3;
+    background-color: grey;
 }
 
 #grid_wrapper_3 {
     display: grid;
     height: 150vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 100px 400px 400px 400px minmax(100px,1fr);
+    grid-template-rows: 150px 50px 400px 400px 400px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea"
     "nav nav"
