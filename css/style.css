@@ -103,6 +103,7 @@ span {
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    margin: 10px;
 }
 
 .intro_picture{
@@ -119,11 +120,15 @@ span {
     text-align: center;
 }
 
-.forum_text {
+.forum_presentation {
     font-size: 1rem;
     padding: 10px;
 }
 
+.forum_text {
+    text-decoration:underline;
+    font-size: 1rem;
+}
 #grid_wrapper_1 {
     display: grid;
     height: 150vh;
@@ -176,7 +181,7 @@ span {
     display: grid;
     height: 200vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 50px 800px 1000px 400px minmax(100px,1fr);
+    grid-template-rows: 150px 50px 800px 1000px 300px minmax(100px,1fr);
     grid-template-areas: 
     "hea"
     "nav"
@@ -212,7 +217,7 @@ span {
     display: grid;
     background-color:  rgb(223, 202, 202);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 100px 50px 50px 50px;
     grid-area: go;
     grid-template-areas: 
     "se2_3 se2_3"
