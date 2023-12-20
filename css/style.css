@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 30px;
+
 }
 
 a {
@@ -40,6 +40,11 @@ footer {
     justify-content: center;
     align-items: end;
     font-size: 50px;
+    color: white;
+}
+
+span {
+    font-size: 2rem;
 }
 
 .fit_flare {
@@ -64,21 +69,23 @@ footer {
 }
 
 .namn {
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .lista {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
+    font-size: 1rem;
 }
 
 .main_text {
-    font-size: 20px;
-    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
     padding: 20px;
     margin: 20px;
 
@@ -93,11 +100,9 @@ footer {
 }
 
 .intro_text {
-    font-size: 20px;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-family: 'Anton', sans-serif;
-    justify-content: space-evenly;
-    display: flex;
 }
 
 .intro_picture{
@@ -110,17 +115,20 @@ footer {
 }
 
 .title{
+    font-size: 2rem;
     text-align: center;
 }
 
 .forum_text {
-    font-size: 20px;
+    font-size: 1rem;
+    padding: 10px;
 }
+
 #grid_wrapper_1 {
     display: grid;
     height: 150vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 50px 500px 500px minmax(100px,1fr);
+    grid-template-rows: 150px 50px 450px 450px minmax(100px,1fr);
     grid-template-areas:
     "hea hea"
     "nav nav" 
@@ -168,13 +176,13 @@ footer {
     display: grid;
     height: 200vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 50px 900px 1000px 200px minmax(100px,1fr);
+    grid-template-rows: 150px 50px 800px 1000px 400px minmax(100px,1fr);
     grid-template-areas: 
     "hea"
     "nav"
     "se2_1"
     "se2_2"
-    "se2_3"
+    "go"
     "foo"
 }
 
@@ -199,9 +207,74 @@ footer {
     flex-direction: column;
 }
 
+
+#grid_wrapper_2_1 {
+    display: grid;
+    background-color:  rgb(223, 202, 202);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-area: go;
+    grid-template-areas: 
+    "se2_3 se2_3"
+    "se2_4 se2_5"
+    "se2_6 se2_7"
+    "se2_8 se2_9"
+}
+
 #se_2_3 {
     grid-area: se2_3;
-    background-color: grey;
+    font-size: 2rem;
+    background-color:  rgb(223, 202, 202);
+
+}
+
+#se_2_4 {
+    background-color: goldenrod;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#se_2_5 {
+    background: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#se_2_6 {
+    background: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#se_2_7 {
+    background: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#se_2_8 {
+    background: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#se_2_9 {
+    background: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
 }
 
 #grid_wrapper_3 {
